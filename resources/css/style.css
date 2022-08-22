@@ -1,0 +1,229 @@
+/* TẤT CẢ */
+body{
+      background:#2B2C2D;
+}
+
+
+
+
+
+
+/*TRANG CHU */
+ .video-container {
+    margin-top: -35px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    object-position: center ;
+}
+.video-container img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(75%);
+
+}
+
+/* Just styling the content of the div, the *magic* in the previous rules */
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  color: #dc0000;
+  padding: 10px;
+}
+ #card{
+          box-shadow: 0 10px 16px 0 rgba(0,0,0,1.8);
+    }
+    #infoi {
+    z-index: 1;
+  width: 100%;
+  background: linear-gradient(to right, rgb(201, 75, 75), rgb(75, 19, 79));
+  position: absolute;
+  text-align: center;
+height: 0;
+    overflow: hidden;
+    bottom: 0;
+     opacity: 0;
+  transition:0.4s;
+}
+#card:hover #infoi{
+    padding: 10px;
+  opacity: 1;
+  height: 210px;
+    transition:0.4s;
+     
+}
+
+#card video {
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  /*top: 400px;
+  height: 0;*/
+  left: 0;
+  height: 210px;
+  opacity: 0;
+  top: 0;
+  transform: translateY(230px);
+  transition: 0.4s ;
+   z-index: 1;
+}
+#card:hover video{
+     opacity: 1;
+     transform: translateY(0px);
+    transition: 0.65s; 
+}
+
+
+
+
+
+
+
+
+/*TRANG CHU SECOND MAIN*/
+#card2 {
+    width: 450px;
+    height: 200px;
+    border-radius: 0;
+}
+#card2 video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  visibility: hidden;
+  transition: all 0.4s ;
+  background: black;
+  transform: scale(1) translateY(0px) translate(0px,0px);
+   border: 1px solid white;
+}
+#card2:hover video{
+    transform: scale(1.05) translateY(-35px) translate(0px,0px);
+    width: 450px;
+    height: 273px;
+    transition-delay: 0.4s;
+    visibility: visible;
+    z-index: 1;
+       box-shadow: 0 10px 16px 0 rgba(0,0,0,0.8);
+       filter: brightness(80%);
+}
+#card2:hover{
+    transform: scale(1.15);
+    z-index: 1;
+}
+#card2{
+     transition: all 1s ;
+}
+#card2:hover img{
+    opacity: 0;
+     transition: opacity 0.5s;
+}
+#card2 img{
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition-delay: 0.5s;
+}
+#infoi2 {
+    z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  top: 200px;
+visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+    transition: 0.3s;
+}
+#card2:hover #infoi2{
+    display: block;
+     visibility: visible;
+     top: 60px;
+  opacity: 1;
+  transition-delay: 0.8s;
+}
+
+
+
+
+
+/*TRANG CHỦ BANNER 1 */
+#banner1{
+    position:relative;display: flex;justify-content: center;margin-top: 50px;
+}
+#banner1-img1{
+    width: 100vw;height: 240px;object-fit: cover;position: absolute;margin-top: 60px; box-shadow: 0 10px 16px 0 rgba(0,0,0,1.8);
+}
+#banner1-img2{
+    width: 250px;height: 300px;position: relative;margin-left:300px;transition: transform 0.3s;
+}
+#banner1-img2:hover{
+    transform: scale(1.2);
+  } 
+
+
+
+
+
+/*TRANG CHỦ BANNER 3*/
+#banner3-title{
+    background: black;color:white;position: absolute;margin-top: 70px;padding: 10px;width: 100%;text-align: center;height: 60px;
+}  
+#banner3{
+    box-shadow: 10px 10px 10px;height: 200px;overflow: hidden;margin-top: 130px;position: relative;display: flex;
+        flex-flow: column;
+        justify-content: center;align-items: center;flex-flow: column;
+}
+#banner3img{
+    width: 100%;position: absolute;transition: 0.6s;
+}
+#banner3button{
+    position:absolute;border: 2px solid white;
+}
+#banner3-caption{
+    position:relative;top:480px;text-align: center;color: white;font-size: 6ch;line-height: 40px;visibility: hidden;
+}
+#banner3-caption-1{
+    text-shadow: 4px 4px 8px rgb(255 0 0 / 30%), 4px -4px 8px rgb(255 0 0 / 30%), -4px 4px 8px rgb(255 0 0 / 30%), -4px -4px 8px rgb(255 0 0 / 30%);font-size: 1.2ch;
+}
+#banner3img3{
+    position:absolute;top:200px;visibility: hidden;height: 400px;left: 0;
+}
+#banner3img3 h1{
+    color:white;text-align: center;
+}
+#banner3img1{
+    position:absolute;visibility: hidden;height: 400px;right: 50px;top: 250px;
+}
+
+#banner3img2{
+    position:relative;visibility: hidden;bottom: 0;margin-top: 450px;margin-left: 80px;
+}
+
+ #banner3img1{
+        filter: brightness(1.5);
+        transition: 0.4s;
+    }
+    #banner3img2{
+        filter: brightness(1.5);
+        transition: 0.4s;
+    }
+    #banner3img3{
+        filter: brightness(1.5);
+        transition: 0.4s;
+    }
+    #banner3img1:hover{
+        filter: brightness(2.2);
+    }
+    #banner3img2:hover{
+        filter: brightness(2.2);
+    }
+    #banner3img3:hover{
+        filter: brightness(2.2);
+    }
